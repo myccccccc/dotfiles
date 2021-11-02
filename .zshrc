@@ -112,3 +112,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias desktop="cd ~/Desktop"
+
+# .zsh_history limit
+export HISTSIZE=30000
