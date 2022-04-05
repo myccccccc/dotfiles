@@ -2,7 +2,8 @@ execute pathogen#infect()
 
 " plugins
 " gruvbox
-autocmd vimenter * ++nested colorscheme gruvbox
+let g:gruvbox_contrast_dark='soft'
+colorscheme gruvbox
 
 " airline
 let g:airline#extensions#whitespace#enabled = 0
@@ -63,6 +64,7 @@ set smartcase
 set expandtab
 set tabstop=4
 set autoindent
+set shiftwidth=4
 
 " map
 let mapleader=" "
