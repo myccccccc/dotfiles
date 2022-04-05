@@ -26,6 +26,10 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 " nerdtree
 autocmd VimEnter * NERDTree | wincmd p
 
+" vim-gitgutter
+set updatetime=500
+let g:gitgutter_max_signs = -1
+
 " base
 syntax on
 filetype plugin indent on
@@ -58,10 +62,11 @@ set tabstop=4
 set autoindent
 
 " map
+let mapleader=" "
 " noremap <esc> :noh<CR><esc>
 nmap <C-q> :q<CR>
 nmap q :bp<Bar>bd #<CR>
-nmap ? :bn<CR>
+nmap ? :bn!<CR>
 nmap <C-S> :w<CR>
 " very no magic \V 选项会使得其后的模式中有且只有反斜杠 \ 具有特殊意义， 若想使用正则表达式需要用反斜杠为 ^ $ . * [ + ? ( ) { 等赋予意义
 nnoremap / /\V
