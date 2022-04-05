@@ -30,6 +30,9 @@ autocmd VimEnter * NERDTree | wincmd p
 set updatetime=500
 let g:gitgutter_max_signs = -1
 
+" nerdcommenter
+let g:NERDSpaceDelims=1
+
 " base
 syntax on
 filetype plugin indent on
@@ -64,13 +67,19 @@ set autoindent
 " map
 let mapleader=" "
 " noremap <esc> :noh<CR><esc>
-nmap <C-q> :q<CR>
-nmap q :bp<Bar>bd #<CR>
-nmap ? :bn!<CR>
-nmap <C-S> :w<CR>
+nnoremap <C-q> :q<CR>
+nnoremap q :bp<Bar>bd #<CR>
+nnoremap <C-s> :w<CR>
 " very no magic \V 选项会使得其后的模式中有且只有反斜杠 \ 具有特殊意义， 若想使用正则表达式需要用反斜杠为 ^ $ . * [ + ? ( ) { 等赋予意义
 nnoremap / /\V
 noremap , ^
 noremap . $
 noremap ; b
 noremap ' w
+map <C-m> <plug>NERDCommenterToggle
+map <C-Down> <C-w><Down>
+map <C-Up> <C-w><Up>
+map <C-Left> <C-w><Left>
+map <C-Right> <C-w><Right>
+map <S-Right> :bn!<CR>
+map <S-Left> :bp!<CR>
