@@ -34,6 +34,9 @@ let g:gitgutter_max_signs = -1
 " nerdcommenter
 let g:NERDSpaceDelims=1
 
+" CtrlP
+let g:ctrlp_by_filename = 1
+
 " base
 syntax on
 filetype plugin indent on
@@ -85,3 +88,7 @@ map <C-Left> <C-w><Left>
 map <C-Right> <C-w><Right>
 map <S-Right> :bn!<CR>
 map <S-Left> :bp!<CR>
+map <A-Down> :resize +1<CR>
+map <A-Up> :resize -1<CR>
+map <A-Left> :vertical resize -1<CR>
+map <A-Right> :vertical resize +1<CR>
