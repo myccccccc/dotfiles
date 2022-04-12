@@ -113,6 +113,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias desktop="cd ~/Desktop"
+alias grep="grep --color=auto"
 
 # .zsh_history limit
 export HISTSIZE=30000
