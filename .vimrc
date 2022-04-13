@@ -36,6 +36,7 @@ let g:NERDSpaceDelims=1
 
 " CtrlP
 let g:ctrlp_by_filename = 1
+let g:ctrlp_regexp = 1
 
 " base
 syntax on
@@ -82,6 +83,7 @@ noremap . $
 noremap ; b
 noremap ' w
 map <C-m> <plug>NERDCommenterToggle
+nnoremap <C-n> :NERDTree<CR>
 map <C-Down> <C-w><Down>
 map <C-Up> <C-w><Up>
 map <C-Left> <C-w><Left>
